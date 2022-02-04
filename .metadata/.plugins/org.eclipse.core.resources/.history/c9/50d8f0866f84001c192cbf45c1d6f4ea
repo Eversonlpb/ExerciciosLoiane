@@ -1,0 +1,24 @@
+package com.loiane.cursojava.aula12;
+
+import java.util.Scanner;
+
+public class CorrecaoExercicios {
+	public static void main(String[] args) {
+		
+		/* //1.
+		
+		System.out.println("Hello World");
+		
+		// 2.  */
+		
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("Informe um número inteiro:");
+		
+		int numero = scan.nextInt();
+		
+		System.out.println("O número informado foi " + numero);
+		
+		
+	}
+}
