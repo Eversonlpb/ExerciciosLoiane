@@ -1,0 +1,247 @@
+import java.util.Scanner;
+
+public class Exercicios_Java_Aulas_14_15 {
+	
+	public static void main(String[] args) {
+		
+	
+	
+	// 1. Faça um programa que peça dois número e imprima o maior deles.
+	
+	/* Scanner scan = new Scanner(System.in);
+	System.out.println("Entre com dois números inteiros: ");
+	
+	int num1 = scan.nextInt();
+	int num2 = scan.nextInt();
+	
+	if (num1 > num2) {
+	System.out.println("O maior número é: " + num1);
+	} else if (num1 < num2) {
+		System.out.println("O maior número é: " + num2);
+	}}
+
+	// 2. Faça um programa que peça um valor e mostre na tela se o valor é positivo ou negativo. 
+
+		Scanner scan = new Scanner(System.in);
+		double numero = scan.nextDouble();
+		
+		if (numero < 0) {
+			System.out.println("Número negativo");
+		} else if (numero >= 0){
+			System.out.println("Número positivo");
+		}
+		
+		
+		
+	// 3. Faça um programa que verifique se uma letra digitada é "F", "M" ou "NB".
+	// Conforme a letra escrever: F - Feminino, M - Masculino, NB - Não Binário.
+		
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("Informe o sexo com 'F', 'M', 'NB':");
+		String sexo = scan.nextLine();
+		
+		switch(sexo){
+		case "F": System.out.println("F - Feminino");
+		break;
+		case "M": System.out.println("M- Masculino");
+		break;
+		case "NB": System.out.println("NB - Não Binário");
+		break;
+		default: System.out.println("Informação inválida");
+		} 
+		
+	// 4. Faça um programa que verifique se uma letra digitada é vogal ou consoante.
+		
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("Digite uma letra:");
+		String letra = scan.next();
+		
+		switch(letra) {
+		case "a": ;
+		case "e": ; 
+		case "i": ;
+		case "o": ; 
+		case "u": System.out.println("Vogal");
+		break;
+		default: System.out.println("Consoante ou numeral");
+		}
+		
+		
+	// 5. Faça um programa para leitura de duas notas parciais de um aluno.
+	// O programa deve calcular a média alcançada por aluno e apresentar:
+	// - A mensagem "Aprovado" se a média for maior ou igual a 7.
+	// - A mensagem "Reprovado" se a média alcança for menor que 7.
+	// - A mensagem "Aprovado com Distinção" se a média alcançada for igual a 10.
+		
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Informe as duas notas do(a) aluno(a):");
+		double nota1 = scan.nextDouble();
+		double nota2 = scan.nextDouble();
+		double media = (nota1 + nota2) / 2;
+		
+		if(media >= 7 && media < 9 ) {
+			System.out.println("Aprovado.");
+		}else if (media == 10){
+			System.out.println("Aprovado com Distinção!");
+		}else {
+			System.out.println("Reprovado.");
+		}
+		
+		
+	// 6 . Faça um programa que leia três números e mostre o maior deles.
+		
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Informe três números a serem comparados:");
+		int num1 = scan.nextInt();
+		int num2 = scan.nextInt();
+		int num3 = scan.nextInt();
+		
+		if(num1 > num2 && num1 > num3) {
+			System.out.println("O maior número é: " + num1);
+		}else if(num2 > num1 && num2 > num3) {
+			System.out.println("O maior número é: " + num2);
+		}else {
+			System.out.println("O maior número é: " + num3);
+		}
+		
+		
+	// 7. Faça um programa que leia três número e mostre o maior e menor deles.
+		
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Informe três números a serem comparados:");
+		int num1 = scan.nextInt();
+		int num2 = scan.nextInt();
+		int num3 = scan.nextInt();
+		
+		if (num1 > num2 && num1 > num3 && num2 > num3) {
+			System.out.println("O maior número é: " + num1);
+			System.out.println("O menor número é: " + num3);
+		} else if (num2 > num1 && num2 > num3 && num3 > num1) {
+			System.out.println("O maior número é: " + num2);
+			System.out.println("O menor número é: " + num1);
+		} else if (num3 > num1 && num3 > num2 && num2 > num1) {
+			System.out.println("O maior número é: " + num3);
+			System.out.println("O menor número é:" + num1);
+		}
+		
+
+		
+	// 8. Faça um programa que pergunte o preço dos três produtos e 
+	//	informe qual produto você deve comprar, sabendo que a decisão é sempre pelo mais barato.
+		
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Informe os valores dos três produtos:");
+		double prod1 = scan.nextDouble();
+		double prod2 = scan.nextDouble();
+		double prod3 = scan.nextDouble();
+		
+		if (prod1 < prod2 && prod1 < prod3) {
+			System.out.println("O produto com menor preço é: " + prod1);
+		}else if(prod2 < prod1 && prod2 < prod3) {
+			System.out.println("O produto com menor preço é: " + prod2);
+		}else {
+			System.out.println("O produto com menor preço é: " + prod3);
+		}
+		
+		
+		
+	// 9. Faça um programa que leia três números e mostre-os em ordem descrescente:
+		
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Entre com três números");
+		int num1 = scan.nextInt();
+		int num2 = scan.nextInt();
+		int num3 = scan.nextInt();
+		
+		if (num1> num2 && num1 > num3 && num2 > num3) {
+			System.out.println("A ordem descrescente é: " + num1 + ", " + num2 + ", " + num3 +  ".");
+		}else if (num2> num1 && num2 > num3 && num1 > num3) {
+			System.out.println("A ordem descrescente é: " + num2 + ", " + num1 + ", " + num3 + ".");
+		}else if (num3> num1 && num3 > num2 && num2 > num1) {
+			System.out.println("A ordem descrescente é: " + num3 + ", " + num2 + ", " + num1 + ".");
+		}else if (num2 > num3 && num2 > num1 && num3 > num1) {
+			System.out.println("A ordem descrescente é: " + num2 + ", " + num3 + ", " + num1 + ".");
+		}else if(num1 > num2 && num1 > num3 && num3 > num2) {
+			System.out.println("A ordem descrescente é: " + num1 + ", " + num3 + ", " + num2 + ".");
+		}else {
+			System.out.println("A ordem descrescente é: " + num3 + ", " + num1 + ", " + num2 + ".");
+		}
+		
+		
+		
+	// 10. Faça um programa que pergunte em que turno você estuda.
+	// Peça para digitar M - Matutino, V - Vespertino, ou N - Noturno. Imprima a mensagem "Bom dia!",
+	// "Boa tarde!" ou "Boa noite!" ou "Valor inválido", conforme o caso.
+		
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Informe o turno em que você estudo com 'M' para matunino," + 
+		"'V' para vespertino e 'N' para noturno:");
+		String turno = scan.next();
+		
+		switch(turno) {
+		case "M": System.out.println("Bom dia!");
+		break;
+		case "V": System.out.println("Boa tarde!");
+		break;
+		case "N": System.out.println("Boa noite!");
+		break;
+		default: System.out.println("Valor inválido");
+		}
+		*/
+		
+	// 11. As Organizações Tabajara  resolveram dar um aumento de salário aos seus colaboradores
+	// e lhe contrataram  para desenvolver o programa que calculará os reajustes.
+	//  Faça um programa que receba o salário de um colaborador e o reajuste segundo o seguinte critério , baseado no salário atual:
+	// - Salários até R$280,00 (incluindo): aumento de 20%
+	// - Salários entre R$280,00 e R$700,00: aumento de 15% 
+	// - Salários entre R$700,00 e R$ 1.500,00: aumento de 10%
+	// - Salários acima de R$1.500,00 em diante: aumento de 5%.
+	// Após o aumento ter sido realizado, informe na tela: 
+	// - O Salário antes do reajuste;
+	// - O percentual de aumento  aplicado ;
+	// - O valor do aumento;
+	// - O novo salário após o aumento;
+		
+	Scanner scan = new Scanner(System.in);
+	System.out.println("Informe o valor do salário ao qual será aplicado o aumento:");
+	
+	float salario = scan.nextFloat();
+	float vintePercentual = 20/100;
+	float quinzePercentual = 15/100;
+	float dezPercentual = 10/100;
+	float cincoPercentual = 5/100;
+	float valorAcrescido = 0;
+	
+	if ( salario <= 280.00) {
+		float valorFinal = salario + (vintePercentual * salario);
+		System.out.println("Salário antes do reajuste:" + salario);
+		System.out.println("Aumento de 20%");
+		valorAcrescido = vintePercentual * salario;
+		System.out.println("O valor acrescentado é: " + valorAcrescido);
+		System.out.println("O salário após o ajuste é:" + valorFinal);		
+	} else if (salario > 280.00 || salario < 700.00) {
+		float valorFinal = salario + (quinzePercentual * salario);
+		System.out.println("Salário antes do reajuste:" + salario);
+		System.out.println("Aumento de 15%");
+		valorAcrescido = vintePercentual * salario;
+		System.out.println("O valor acrescentado é: " + valorAcrescido);
+		System.out.println("O salário após o ajuste é:" + valorFinal);
+	} else if (salario > 700.00 || salario < 1500.00) {
+		float valorFinal = salario + (dezPercentual * salario);
+		System.out.println("Salário antes do reajuste:" + salario);
+		System.out.println("Aumento de 10%");
+		valorAcrescido = vintePercentual * salario;
+		System.out.println("O valor acrescentado é: " + valorAcrescido);
+		System.out.println("O salário após o ajuste é:" + valorFinal);
+	}else {
+		float valorFinal = salario + (cincoPercentual * salario);
+		System.out.println("Salário antes do reajuste:" + salario);
+		System.out.println("Aumento de 5%");
+		valorAcrescido = vintePercentual * salario;
+		System.out.println("O valor acrescentado é: " + valorAcrescido);
+		System.out.println("O salário após o ajuste é:" + valorFinal);
+	}
+	
+	}}	 
