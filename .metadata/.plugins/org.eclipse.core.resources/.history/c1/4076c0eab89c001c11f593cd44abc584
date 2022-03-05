@@ -389,7 +389,7 @@ public class Exercicios_Java_Aulas_14_15 {
 			System.out.println("Conceito: E");
 			System.out.println("Aluno(a) foi: Reprovado");
 		}
-		
+		*/
 		
 	// 15. Faça um programa que peça os 3 lados de um triângulo. 
 	// O programa deverá informa se os valores podem ser um triângulo. 
@@ -404,79 +404,14 @@ public class Exercicios_Java_Aulas_14_15 {
 		
 		if(ladoA < ladoB + ladoC || ladoB < ladoA + ladoC || ladoC < ladoA + ladoB ) {
 			System.out.println("É triango:" + triangulo);
-			if(ladoA == ladoB && ladoA == ladoC) {
-		System.out.println("Equilátero");
-			}else if(ladoA == ladoB || ladoA == ladoC || ladoB == ladoC) {
-				System.out.println("Isósceles");
+			if(ladoA == ladoB || ladoA == ladoC || ladoB == ladoC) {
+		System.out.println("Isóceles");
+			}else if(ladoA == ladoB && ladoA == ladoC) {
+				System.out.println("Equilátero");
 			}else {
 				System.out.println("Escaleno");
 			}
 		}else {
 			System.out.println("Não é um triângulo!");
 		}
-		
-		
-	// Faça um programa que calcule as raízes de uma equação de segrundo grau, na forma ax2 + bx + c.
-	// O programa deverá pedir os valores de a, b e c e fazer as consistências informando ao usuário nas seguintes sistuações:
-	// a.)Se o usuário informar o valor de A igual a zero a equação não é de segundo grau e o programa não deve pedir os demais valores, sendo ecerrado.
-	// b.)Se o delta calculado for negativo, a equação não possui raizes reais. Informe ao usuário e encerre o programa.
-	// c.)Se o delta calculado for igual a zero a equação possui apenas uma raiz real; informe ao usuário.
-	// d.)Se o delta for positivo, a equação possui duas raízes reais; informe-as ao usuário.
-		
-		Scanner scan = new Scanner(System.in);
-		System.out.println("Informe os valores de A, B e C:");
-		
-		double a = scan.nextDouble();
-		double b = scan.nextDouble();
-		double c = scan.nextDouble();
-		
-		if (a != 0) {
-			double delta = (b*b) - (4*a*c);
-			if(delta == 0) {
-				double raiz1 = (-b + Math.sqrt(delta) / (2*a));
-				System.out.println("Delta = " + delta);
-				System.out.println("Raiz = " + raiz1);
-			}else if(delta > 0) {
-				double raiz1 = (-b + Math.sqrt(delta) / (2*a));
-				double raiz2 = (-b - Math.sqrt(delta) / (2*a));
-				System.out.println("Delta = " + delta);
-				System.out.println("Primeira raiz  = " + raiz1);
-				System.out.println("Segunda raiz = " + raiz2);
-			}else {
-				System.out.println("Delta = " + delta);
-				System.out.println("Não existem raizes reais!");
-			}
-		}else {
-			System.out.println("Essa não é uma equação de segundo grau!");
-			System.out.println("Informe um valor diferente de 0 para A e tente novamente!");
-		}
-		
-		
-	// 17. Faça um programa que peça um número correspondente a um determinado ano e em seguida informe se este ano é um ano bissexto.
-		
-		Scanner scan = new Scanner(System.in);
-		System.out.println("Informe um ano:");
-		int ano = scan.nextInt();
-		
-		if((ano % 400 == 0) || (ano % 4 == 0 && ano % 100 != 0)) {
-			System.out.println(ano + " é um ano bissexto!");
-		}else {
-			System.out.println(ano + " NÃO é um ano bissexto!");
-		}
-		
-		
-	// 18. Faça um programa que peça um número inteiro e determine se o número é par ou impar.
-		
-		Scanner scan = new Scanner(System.in);
-		System.out.println("Informe um número inteiro:");
-		
-		int numero = scan.nextInt();
-		
-		if(numero % 2 == 0) {
-			System.out.println(numero + " é um número par.");
-		}else {
-			System.out.println(numero + " é um número impar.");
-		}
-		*/
-	// 19. 
 	}}	 

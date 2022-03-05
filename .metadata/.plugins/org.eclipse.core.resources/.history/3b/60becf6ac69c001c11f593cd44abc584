@@ -450,7 +450,7 @@ public class Exercicios_Java_Aulas_14_15 {
 			System.out.println("Essa não é uma equação de segundo grau!");
 			System.out.println("Informe um valor diferente de 0 para A e tente novamente!");
 		}
-		
+		*/
 		
 	// 17. Faça um programa que peça um número correspondente a um determinado ano e em seguida informe se este ano é um ano bissexto.
 		
@@ -464,19 +464,4 @@ public class Exercicios_Java_Aulas_14_15 {
 			System.out.println(ano + " NÃO é um ano bissexto!");
 		}
 		
-		
-	// 18. Faça um programa que peça um número inteiro e determine se o número é par ou impar.
-		
-		Scanner scan = new Scanner(System.in);
-		System.out.println("Informe um número inteiro:");
-		
-		int numero = scan.nextInt();
-		
-		if(numero % 2 == 0) {
-			System.out.println(numero + " é um número par.");
-		}else {
-			System.out.println(numero + " é um número impar.");
-		}
-		*/
-	// 19. 
 	}}	 

@@ -463,7 +463,7 @@ public class Exercicios_Java_Aulas_14_15 {
 		}else {
 			System.out.println(ano + " NÃO é um ano bissexto!");
 		}
-		
+		*/
 		
 	// 18. Faça um programa que peça um número inteiro e determine se o número é par ou impar.
 		
@@ -477,6 +477,5 @@ public class Exercicios_Java_Aulas_14_15 {
 		}else {
 			System.out.println(numero + " é um número impar.");
 		}
-		*/
-	// 19. 
+		
 	}}	 
